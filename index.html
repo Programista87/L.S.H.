@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loson Software House</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin=""></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo" alt=""/>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">My works</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="fas fa-bars"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Wojtek</span><br>Enthusiast <span>JavaScript.</span></h1>
+        </div>
+    </div>
+</div>
+<!-- ----------ABOUT---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/headshot.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi. My name is Wojciech Losoń.</p>
+                <p>I am striving to become a great JavaScript developer.</p>
+                <p>I'm heading towards Full-Stack, developing soft skills and practicing English.</p>
+                <p>He currently works at VUE-3, practicing Fronted in a friendly software house.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab(0)">Skills</p>
+                    <p class="tab-links" onclick="openTab(1)">Experience</p>
+                    <p class="tab-links" onclick="openTab(2)">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Designing and creating applications and websites.</li>
+                        <li><span>App Development</span><br>Android app development, iOS coming soon...</li>
+                        <li><span>IoT and AI</span><br>As a hobby, he learns about the processes taking place in the
+                            Internet of Things and the use of artificial intelligence.
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Javascript Developer at RR · Internship.</li>
+                        <li><span>2022 - Current</span><br>JavaScript student, self-employed.</li>
+                        <li><span>2020 - 2022</span><br>MegaK, ZeroToJunior courses. Full-Stack and Backend.</li>
+                        <li><span>2011 - 2022</span><br>Locomotive driver, roadheader operator in the Hard Coal Mine.
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2009</span><br>Bachelor's degree (Lic.), European Integration</li>
+                        <li><span>2006 Development</span><br>Searching, selecting and gathering information (High
+                            school).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------SERVICES---------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>App Development</h2>
+                <p>Terminal JavaScript Quiz</p>
+                <p>Here's a JavaScript quiz, test yourself!</p>
+                <a href="https://github.com/Programista87/terminalJSgame">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Coming soon</p>
+                <a href="https://github.com/Programista87">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>IoT & AI</h2>
+                <p>Coming soon</p>
+                <a href="https://github.com/Programista87">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------PORTFOLIO--------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/carl-garage.png" alt="">
+                <div class="layer">
+                    <h2>Car services website</h2>
+                    <p>Car service based on the VUE3 framework, in accordance with the client's guidelines.</p>
+                    <a href="https://github.com/Programista87/carl-garage"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/projects.jpg" alt="">
+                <div class="layer">
+                    <h2>Coming soon</h2>
+                    <p>Check out my GitHub.</p>
+                    <a href="https://github.com/Programista87"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/projects.jpg" alt="">
+                <div class="layer">
+                    <h2>Coming soon</h2>
+                    <p>Check out my GitHub.</p>
+                    <a href="https://github.com/Programista87"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--        <a href="" class="btn">See more</a>-->
+    </div>
+</div>
+
+<!-- ----------CONTACT---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> wojciechloson@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Programista87"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/c0d3r1010111/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/wojciech-loso%C5%84-259a411aa"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <!--                <a href="" download class="btn btn2">Download CV</a>-->
+            </div>
+            <div class="contact-right">
+                <form action="https://lsh.networkmanager.pl/process-form.php" method="post">
+                    <label for="Name">Your Name:</label>
+                    <input type="text" id="Name" name="Name" placeholder="Your Name" required>
+
+                    <label for="Email">Your Email:</label>
+                    <input type="email" id="Email" name="Email" placeholder="Your Email" required>
+
+                    <label for="Message">Your Message:</label>
+                    <textarea id="Message" name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <div style="display: none;">
+                        <label for="HiddenField">Leave this field blank:</label>
+                        <input type="text" id="HiddenField" name="HiddenField">
+                    </div>
+
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="copyright">
+        <a href="https://lsh.networkmanager.pl">LSH</a>
+    </div>
+</div>
+
+
+<script>
+    const tabLinks = document.getElementsByClassName('tab-links');
+    const tabContents = document.getElementsByClassName('tab-contents');
+
+    function openTab(tabIndex) {
+        for (let i = 0; i < tabLinks.length; i++) {
+            tabLinks[i].classList.remove('active-link');
+            tabContents[i].classList.remove('active-tab');
+        }
+
+        tabLinks[tabIndex].classList.add('active-link');
+        tabContents[tabIndex].classList.add('active-tab');
+    }
+
+    const menuIcon = document.querySelector('.fas.fa-bars');
+    const navMenu = document.querySelector('nav ul');
+
+    menuIcon.addEventListener('click', function () {
+        navMenu.classList.toggle('show');
+    });
+
+    document.addEventListener('click', function (event) {
+        const isClickInsideMenu = navMenu.contains(event.target);
+        const isClickOnMenuButton = menuIcon.contains(event.target);
+
+        if (!isClickInsideMenu && !isClickOnMenuButton) {
+            navMenu.classList.remove('show');
+        }
+    });
+</script>
+
+
+</body>
+
+</html>
+
