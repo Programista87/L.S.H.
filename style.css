@@ -13,8 +13,8 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/IMG_1315-removebg.png);
-    background-size: 50%;
+    background-image: url(images/headshot-removebg.png);
+    background-size: 80%;
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -31,7 +31,7 @@ nav {
 }
 
 .logo {
-    width: 140px;
+    width: 120px;
 }
 
 nav ul li {
@@ -64,24 +64,42 @@ nav ul li a:hover::after {
 
 
 .header-text {
-    margin-top: 20%;
-    font-size: 30px;
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 60px;
+    justify-items: center;
 }
 
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
+
 }
 
 .header-text h1 span {
     color: #ff004f;
 }
 
+#hamburger-button {
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: fixed;
+    top: 30px; /* Ustaw odpowiednią wartość top, aby przycisk był widoczny */
+    left: 15px; /* Ustaw odpowiednią wartość left, aby przycisk był widoczny */
+}
+
+
+#hamburger-button.scrolled {
+    color: #ff004f;
+}
+
 /* ----------ABOUT---------- */
 #about {
     padding: 80px 0;
-
     color: #ababab;
 }
 
@@ -155,6 +173,46 @@ nav ul li a:hover::after {
 
 .tab-contents.active-tab {
     display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Dodaj odpowiednie style dla urządzeń mobilnych */
+
+    #about {
+        padding: 30px 0;
+    }
+
+    .about-col-1 {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .sub-title {
+        font-size: 40px;
+    }
+
+    .tab-links {
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .tab-contents ul li {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .tab-titles {
+        text-align: center;
+        width: 100%;
+    }
+
 }
 
 /* ----------SERVICES---------- */
@@ -377,7 +435,7 @@ form textarea {
     color: #fff;
 }
 .copyright a {
-    color: #ff004f;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -385,19 +443,77 @@ nav .fas {
     display: none;
 }
 
+@media only screen and (max-width: 600px) {
+    #contact {
+        padding: 30px 0;
+    }
+
+    .contact-left {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .contact-left p {
+        font-size: 16px;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+    }
+
+    .social-icons {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 30px;
+        color: #ababab;
+        transition: color 0.5s, transform 0.5s;
+    }
+
+    .btn.btn2 {
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .sub-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+}
+
 /* ----------CSS FOR SMALL SCREEN---------- */
 @media only screen and (max-width: 600px) {
 
     #header {
-        background-image: url(images/IMG_1315-removebg.png);
-        background-size: cover;
-        background-position: center;
+        width: 100%;
+        height: 100vh;
+        background-image: url(images/headshot-removebg.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: right;
     }
 
     .header-text {
-        margin-top: 100%;
-        font-size: 16px;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 40px;
+        justify-items: center;
     }
+
 
     .header-text h1 {
         font-size: 30px;
@@ -487,10 +603,11 @@ nav .fas {
         display: block;
         margin: 15px;
     }
-}
+    }
 
 @media only screen and (min-width: 600px) {
     nav ul.show {
         display: none;
     }
 }
+
