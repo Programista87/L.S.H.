@@ -17,6 +17,7 @@ body {
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: right;
+    position: relative;
 }
 
 .container {
@@ -62,21 +63,20 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-
 .header-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     justify-items: center;
+    width: 80%;
 }
 
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
-
 }
 
 .header-text h1 span {
@@ -92,10 +92,80 @@ nav ul li a:hover::after {
     right: 15px;
 }
 
-
 #hamburger-button.scrolled {
     color: #ff004f;
 }
+@media only screen and (max-width: 1200px) and (min-width: 601px) {
+    .header-text {
+        font-size: 35px; /* Dostosuj wielkość czcionki do swoich preferencji */
+    }
+    .header-text h1 {
+        font-size: 30px; /* Dostosuj wielkość czcionki h1 do swoich preferencji */
+    }
+    .header-text span {
+        font-size: 35px; /* Dostosuj wielkość czcionki span do swoich preferencji */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        width: 100%;
+        height: auto;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center top;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .header-text {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        font-size: 20px;
+        margin-top: 20px;
+        padding: 20px;
+        width: 80%;
+    }
+    .header-text h1,span {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 150px;
+        margin: 20px auto;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav ul {
+        background: #b54768;
+        position: fixed;
+        top: 0;
+        width: 200px;
+        right: 0;
+        height: 100vh;
+        padding-top: 50px;
+        transform: translateX(200px);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+        display: block;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 15px;
+    }
+}
+
 
 /* ----------ABOUT---------- */
 #about {
